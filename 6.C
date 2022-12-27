@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+#include<math.h>
+int main()
 {
-float m,p,e,cs,agg,percentage;
+float degree,radian;
+float p=3.14159265;
 clrscr();
-printf("Enter the marks of Maths:");
-scanf("%f",&m);
-printf("Enter the marks of English:");
-scanf("%f",&e);
-printf("Enter the marks of Physics:");
-scanf("%f",&p);
-printf("Enter the marks of computer science:");
-scanf("%f",&cs);
-agg=m+p+e+cs;
-percentage=agg/4;
-printf("Aggregrate Marks:%f\n",agg);
-printf("Percentage:%f",percentage);
+printf("Enter the degree:\n");
+scanf("%f",&degree);
+radian=degree*(p/180.0);
+printf("sin(%f)=%f\n",degree,sin(radian));
+printf("cos(%f)=%f\n",degree,cos(radian));
+printf("tan(%f)=%f\n",degree,tan(radian));
+printf("cosec(%f)=%f\n",degree,1/sin(radian));
+printf("sec(%f)=%f\n",degree,1/cos(radian));
+printf("cot(%f)=%f\n",degree,1/tan(radian));
 getch();
+return 0;
 }
