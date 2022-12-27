@@ -2,23 +2,21 @@
 #include<conio.h>
 void main()
 {
-int a,b;
+float cp,sp,profit,loss;
 clrscr();
-printf("Enter the value of a:");
-scanf("%d",&a);
-printf("Enter the value of b:");
-scanf("%d",&b);
-if (a>b)
+printf("Enter the cost price of item");
+scanf("%f",&cp);
+printf("Enter the selling price of item");
+scanf("%f",&sp);
+profit=sp-cp;
+loss=cp-sp;
+if(profit>0)
 {
-printf("a is greatest and b is smallest");
+printf("profit=%f",profit);
 }
-else if(b>a)
+if(loss>0)
 {
-printf("b is greatest and a is smallest");
-}
-else
-{
-printf("Invalid number");
+printf("loss=%f",loss);
 }
 getch();
 }
