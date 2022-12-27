@@ -2,11 +2,16 @@
 #include<conio.h>
 void main()
 {
-float f,c;
+int c,d,h;
 clrscr();
-printf("Enter the temperature in fahrenheit:");
-scanf("%f",&f);
-c=(f-32)*5/9;
-printf("Temperature in centigrade:%f",c);
+printf("Enter the number:\n");
+scanf("%d",&c);
+printf("Enter the number:\n");
+scanf("%d",&d);
+h=c;
+c=d;
+d=h;
+printf("After swapping the number:%d\n",c);
+printf("After swapping the number:%d\n",d);
 getch();
 }
