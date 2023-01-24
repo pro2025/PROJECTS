@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-int stack[100],n,top,item,i=0;
+int stack[100],n,top,item,i;
 int push(void);
 int main()
 {
